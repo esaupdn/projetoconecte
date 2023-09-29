@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel ="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,500;1,500;1,700&display=swap" rel="stylesheet">
+
+    
+    <!-- Seu arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto Conecte</title>
+</head>
+
+    <!-- Barra de navegação Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
+        <img class="logo" src="assets/Logo conecte (1).png">
+        <a class= "navbar-brand" href="#">#CONECTE</a>
+    </nav>
+
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1>Conectando Pessoas Através da Educação</h1>
+        </header>
+        <section class="container-slider">
+            <div class="slider-wrapper">
+                <div class="slider">
+                <img id="slide-1" src="assets/foto5.jpeg" alt="foto 1"/>
+                <img id="slide-2" src="assets/foto2.jpeg" alt="foto 2"/>
+                <img id="slide-3" src="assets/foto3.jpeg" alt="foto 3"/>
+                <img id="slide-4" src="assets/foto4.jpeg" alt="foto 4"/>
+                <img id="slide-5" src="assets/foto1.jpeg" alt="foto 5"/>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+            </section>
+        <section class="about mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre o Projeto</h2>
+                    <p>O Projeto Conecte é uma iniciativa colaborativa entre a Câmara Municipal de Machado 
+                        e o IFSULDEMINAS - Campus Machado. Seu objetivo principal é oferecer assistência e preencher lacunas sociais, 
+                        atendendo às necessidades de pessoas em situações de vulnerabilidade e jovens em busca de oportunidades no mercado de trabalho. Nossa equipe de monitores está disponível durante três dias da semana para fornecer orientação abrangente, 
+                        começando pela formação em fundamentos da informática, digitação e o uso de ferramentas de escritório, como planilhas e editores de texto. 
+                        Nosso propósito é capacitar esses alunos, proporcionando-lhes competência e experiência para que possam se destacar e serem bem-sucedidos no mercado de trabalho</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/internacional.png" alt="Imagem sobre o projeto" class="img-fluid">
+                </div>
+            </div>
+        </section>
+  
+        <section class="project-actions mt-5" id="actions-table">
+            <h2>Ações do Projeto</h2>
+            <table class="table">
+                <thead class="custom-blue-header">
+                    <tr>
+                        <th>Ação</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados CSV serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="impact mt-5">
+            <h2>Nosso Impacto</h2>
+            <p>Já ajudamos milhares de pessoas em nossa comunidade, fornecendo educação, treinamento profissional e muito mais.</p>
+        </section>
+
+        <section class="donate mt-5 text-center">
+            <h2>Participe Também!</h2>
+            <p>Obtenha informações sobre nosso projeto e todos outros serviços prestados pelo CEAC</p>
+            <button class="btn btn-primary" id="donateBtn">Mais Informações</button>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center mt-5 py-3">
+        <p>&copy; 2023 - Projeto Conecte</p>
+
+        <!--  terça e quinta das 14:00 ás 17:30 e sabados das 8:00 as 11:30
+-->
+    </footer>
+
+    <!-- Inclua o Bootstrap JavaScript e o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Classe personalizada com tom de azul */
+.custom-blue-header {
+    background-color: #027f37; /* Cor personalizada */
+    color: #fff; /* Cor do texto */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+#donateBtn {
+    background-color: #027f37; 
+    color: white; 
+}
+
+.btn-primary{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.img-fluid {
+    width: 70%; 
+    height: auto; 
+}
+/* Estilizando a Navbar*/
+.navbar{ 
+    background-image: linear-gradient(to right, #027f37,#027f37);
+}
+
+.logo{
+    width: 75px;
+}
+.navbar-brand{
+    text-align: center;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;}
+
+/**/
+.container mt-5{
+    font-family: 'Poppins', sans-serif;;
+}
+/* Estilizando o Slider*/
+.container-slider{
+    padding: 2rem;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
