@@ -19,34 +19,53 @@ function loadGoogleSheetData() {
         spreadsheetId: spreadsheetId,
         range: 'info'
     }).then(function (response) {
+
         const data = response.result.values;
 
-        tableBody.innerHTML = '';
+        if (data.length > 0) {
+            const donatorsContent = document.getElementById('donators-content');
+            data.forEach(function (row) {
+                const company = row[0];
+                const companyLink = row[1];
+                const companyLogo = row[2];
 
-        data.forEach(function (row) {
-            const rowData = row.map(item => item || '');
+                const donatorsBox = document.createElement('div');
+                donatorsBox.className = 'donators-box';
 
-            const tableRow = document.createElement('tr');
-            rowData.forEach(function (cellData) {
-                const cell = document.createElement('td');
-                cell.textContent = cellData;
-                tableRow.appendChild(cell);
+                if (companyLogo) {
+                    donatorsBox.innerHTML = `
+                        <a href="${companyLink}" target="_blank">
+                            <img class="company-logo" src="${companyLogo}" alt="Logo ${company}">
+                        </a>
+                    `;
+                } else {
+                    donatorsBox.innerHTML = `
+                        <a href="${companyLink}" target="_blank">
+                            ${company}
+                        </a>
+                    `;
+                }
+
+                donatorsContent.appendChild(donatorsBox);
             });
+        }
 
-            tableBody.appendChild(tableRow);
-        });
+    }).catch(function (error) {
+        console.error('Erro ao carregar dados da planilha do Google:', error);
     });
 }
 
-function initGoogleSheetsApi() {
+
+function initGoogleSheetsApiDonators() {
     gapi.client.init({
         apiKey: 'AIzaSyBkz6wh36lc44mZw_FZL15wnEiw23plxDQ',
         discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(function () {
-        loadGoogleSheetData();
+        loadGoogleSheetDataDonators();
     });
 }
-gapi.load('client', initGoogleSheetsApi);
+
+gapi.load('client', initGoogleSheetsApiDonators);
 
 function autoSlide() {
     const slider = document.getElementById("slider");

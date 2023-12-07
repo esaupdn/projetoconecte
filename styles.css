@@ -244,3 +244,21 @@ p{
     }
 }
 
+
+@media (max-width: 1366px){
+    .mapBox{
+        display: flex;
+        padding: 5px;
+        position: relative;
+        width: auto;
+        height: 400px;
+        background: white;
+        overflow: hidden; 
+        border-radius: 10px;
+    }
+    
+    .mapBox iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
