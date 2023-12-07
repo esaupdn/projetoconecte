@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel ="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,500;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700;800&family=Roboto:ital,wght@0,500;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     
     <!-- Seu arquivo CSS personalizado -->
+    <link rel="icon" type="image/png" href="assets/conectar.png">
     <link rel="stylesheet" href="styles.css">
     <title>Projeto Conecte</title>
 </head>
@@ -26,9 +25,15 @@
     </nav>
 
     <div class="container mt-5">
+
         <header class="text-center">
-            <h1>Conectando Pessoas Através da Educação</h1>
+            <h1>Conectando <span class="spanTexto">Pessoas</span> Através da Educação</h1>
         </header>
+
+
+        <div class="img-smartphone">
+            <img src="assets/livro-de-design.png" alt="foto img-smartphone">
+        </div>
         <section class="container-slider">
             <div class="slider-wrapper">
                 <div class="slider">
@@ -38,6 +43,7 @@
                 <img id="slide-4" src="assets/foto4.jpeg" alt="foto 4"/>
                 <img id="slide-5" src="assets/foto1.jpeg" alt="foto 5"/>
             </div>
+
             <div class="slider-nav">
                 <a href="#slide-1"></a>
                 <a href="#slide-2"></a>
@@ -46,6 +52,7 @@
                 <a href="#slide-5"></a>
             </div>
             </section>
+        
         <section class="about mt-5">
             <div class="row">
                 <div class="col-md-6">
@@ -54,49 +61,100 @@
                         e o IFSULDEMINAS - Campus Machado. Seu objetivo principal é oferecer assistência e preencher lacunas sociais, 
                         atendendo às necessidades de pessoas em situações de vulnerabilidade e jovens em busca de oportunidades no mercado de trabalho. Nossa equipe de monitores está disponível durante três dias da semana para fornecer orientação abrangente, 
                         começando pela formação em fundamentos da informática, digitação e o uso de ferramentas de escritório, como planilhas e editores de texto. 
-                        Nosso propósito é capacitar esses alunos, proporcionando-lhes competência e experiência para que possam se destacar e serem bem-sucedidos no mercado de trabalho</p>
+                        Nosso propósito é capacitar esses alunos, proporcionando-lhes competência e experiência para que possam se destacar e serem bem-sucedidos no mercado de trabalho.</p>
                 </div>
+
                 <div class="col-md-6">
-                    <img src="assets/internacional.png" alt="Imagem sobre o projeto" class="img-fluid">
+                    <img src="assets/networking.png" alt="Imagem sobre o projeto" class="img-fluid">
                 </div>
             </div>
         </section>
   
-        <section class="project-actions mt-5" id="actions-table">
-            <h2>Ações do Projeto</h2>
-            <table class="table">
-                <thead class="custom-blue-header">
-                    <tr>
-                        <th>Ação</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Dados CSV serão inseridos aqui via JavaScript -->
-                </tbody>
-            </table>
+            </header>
+
+
+            <h2 class="section-topic-h2">Cursos Disponíveis </h2>
+            <div id="info" class="table-area">
+                <table class="table">
+                    <thead class="table-head">
+                        <tr>
+                            <th>Curso</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <section class="impact mt-5">
-            <h2>Nosso Impacto</h2>
-            <p>Já ajudamos milhares de pessoas em nossa comunidade, fornecendo educação, treinamento profissional e muito mais.</p>
+            <h2>O Impacto em nossa comunidade</h2>
+            <p>O Projeto Conecte é uma fonte de capacitação para a comunidade de Machado, 
+                refletindo um impacto positivo que se estende a indivíduos e famílias, oferecendo oportunidades
+                 e construindo um caminho para um futuro promissor!</p>
+
+                 <p> Alunos que já foram capacitados através do Projeto ▼</p>
         </section>
 
+        <section class="card-section">
+            <div class="card-container">
+                <div class="card">
+                    <img src="assets/aluno1.jpg" alt="Imagem 1">
+                    <h2>Adriana</h2>
+                    <p>Certificada em Digitação Básica</p>
+                </div>
+        
+                <div class="card">
+                    <img src="assets/aluno2.jpg" alt="Imagem 2">
+                    <h2>Pedro Henrique</h2>
+                    <p>Certificado em Digitação Básica.</p>
+                </div>
+        
+                <div class="card"> 
+                    
+                    <img src="assets/aluno3.jpg" alt="Imagem 3">
+                    <h2>Gabrielle</h2>
+                    <p>Certificada em Domínio de Ferramentas para Escritório</p>
+                </div>
+            </div>
+        </section>
+
+
         <section class="donate mt-5 text-center">
-            <h2>Participe Também!</h2>
-            <p>Obtenha informações sobre nosso projeto e todos outros serviços prestados pelo CEAC</p>
-            <button class="btn btn-primary" id="donateBtn">Mais Informações</button>
+            <h2>Conecte<span class="spanTexto">-</span>se com a gente!</h2>
+            <section class="MenuSocials">
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/camarademachado/?locale=pt_BR" class="social-button" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/camaramunicipaldemachado/" class="social-button" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </section>
+        </section>
+
+
+
+        <section class="mapa">
+            <div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.0662258686566!2d-45.92197369785527!
+                3d-21.673573753395004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca135f9ae58e61%3A0x70a6116045a6b6dc!2sCeac!5e0!3m2!1spt-BR!
+                2sbr!4v1697505281065!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referr
+                er-when-downgrade"></iframe></div>
         </section>
     </div>
 
+    <section class="info">
+        <button class="btn btn-primary" id="donateBtn">Mais Informações</button>
+    </section>
+    
     <footer class="bg-dark text-white text-center mt-5 py-3">
-        <p>&copy; 2023 - Projeto Conecte</p>
-
+        <p>&copy; 2023 - Projeto Conecte ©</p>
         <!--  terça e quinta das 14:00 ás 17:30 e sabados das 8:00 as 11:30
 -->
     </footer>
 
     <!-- Inclua o Bootstrap JavaScript e o jQuery -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

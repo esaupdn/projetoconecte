@@ -4,20 +4,25 @@
     color: #fff; /* Cor do texto */
 }
 
+
+.img-smartphone{
+    display: none;
+}
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins'
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins'
 }
 #donateBtn {
     background-color: #027f37; 
     color: white; 
+
 }
 
 .btn-primary{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato';
     color: #fff;
 }
 
@@ -38,10 +43,40 @@ h2 {
     width: 100px;
     font-family: 'Roboto', sans-serif;}
 
-/**/
-.container mt-5{
-    font-family: 'Poppins', sans-serif;;
+
+.mapBox{
+    display: flex;
+    position: relative;
+    width: 1110px;
+    height: 300px;
+    background: white;
+    overflow: hidden; 
+    border-radius: 10px;
 }
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.spanTexto{
+    color: rgb(38, 156, 22);
+}
+
+.frameVideo iframe{
+    height: 500px;
+    width: 1100px;
+}
+
+.galeriaAlunos{
+    display: flex;
+}
+
+.alunoCard{
+    height: 200px;
+    width: 200px;
+}
+
 /* Estilizando o Slider*/
 .container-slider{
     padding: 2rem;
@@ -60,6 +95,7 @@ h2 {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
+    overflow-x: hidden;
 }
 
 .slider img{
@@ -86,8 +122,125 @@ h2 {
     background-color: #fff;
     opacity: 0.75;
     transition: opacity ease 250ms;
+    overflow-x: hidden;
 }
 
 .slider-nav a:hover{
     opacity: 1;
 }
+
+p{
+    font-family: "Lato";
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #027f37;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.social-button:hover {
+    background-color:  #11470a
+}
+
+.info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.impact {
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+@media (max-width: 480px){
+
+    .h1{
+        width: 0lvh;
+    }
+    .img-fluid{
+        display: none;
+    }
+
+    .mapBox{
+        display: flex;
+        padding: 5px;
+        position: relative;
+        width: auto;
+        height: 400px;
+        background: white;
+        overflow: hidden; 
+        border-radius: 10px;
+    }
+    
+    .mapBox iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-container {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .text-center{
+        width: auto;
+    }
+
+    .container-slider{
+        display: none;
+    }
+
+    .img-smartphone{
+        display: flex;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+}
+
